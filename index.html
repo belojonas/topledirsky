@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>TOPLEDIRSKY | Enterprise IT Solutions Timor-Leste</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="TOPLEDIRSKY delivers premium cloud, server, network infrastructure, and 24/7 IT support in Dili, Timor-Leste. Secure, scalable, professional.">
+  <meta name="keywords" content="IT support Dili, cloud solutions Timor-Leste, network setup, TOPLEDIRSKY, managed IT, cybersecurity Timor">
+  <meta name="author" content="TOPLEDIRSKY">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-container">
+    <div class="logo-area">
+      <div class="logo-text">TOPLEDIRSKY</div>
+    </div>
+    <!-- Language Switcher Menu -->
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="tetum">Tetum</button>
+      <button class="lang-btn active" data-lang="english">English</button>
+      <button class="lang-btn" data-lang="portugues">Português</button>
+    </div>
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link" data-translate="nav_home">Home</a></li>
+        <li><a href="#services" class="nav-link" data-translate="nav_services">Services</a></li>
+        <li><a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <h1>TOPLEDIRSKY</h1>
+      <p data-translate="hero_desc">Enterprise-grade cloud, security, and managed IT solutions. Fast, local, and scalable.</p>
+      <div class="btn-group">
+        <a href="#contact" class="btn" data-translate="btn_start"><i class="fas fa-rocket"></i> Start Project</a>
+        <a href="#services" class="btn btn-outline" data-translate="btn_services"><i class="fas fa-chart-line"></i> Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services reveal" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-translate="services_title">Our Services</h2>
+        <p data-translate="services_subtitle">Modern, secure, and tailored for your business goals.</p>
+      </div>
+      <div class="service-cards">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-server"></i></div>
+          <h3 data-translate="service1_title">Managed IT & Support</h3>
+          <p data-translate="service1_desc">24/7 proactive monitoring, helpdesk, and on‑site support in Dili. Minimize downtime.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <h3 data-translate="service2_title">Cloud Solutions</h3>
+          <p data-translate="service2_desc">AWS, Azure, or hybrid — secure migration, auto‑scaling, and cost optimization.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-lock"></i></div>
+          <h3 data-translate="service3_title">Cyber Security</h3>
+          <p data-translate="service3_desc">Next‑gen firewalls, endpoint protection, risk assessment & compliance.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-wifi"></i></div>
+          <h3 data-translate="service4_title">Network Infrastructure</h3>
+          <p data-translate="service4_desc">Structured cabling, enterprise Wi-Fi, SD-WAN, and network audits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact reveal" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-translate="contact_title">Contact Us</h2>
+        <p data-translate="contact_subtitle">As your IT partner in Timor-Leste, we respond to every inquiry within 24 hours.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form">
+          <form id="advancedContactForm">
+            <input type="text" id="contactName" 
+              data-placeholder-tetum="Naran kompletu *" 
+              data-placeholder-eng="Full name *" 
+              data-placeholder-por="Nome completo *" 
+              placeholder="Full name *" required>
+            <input type="email" id="contactEmail" 
+              data-placeholder-tetum="Korteiu *" 
+              data-placeholder-eng="Email address *" 
+              data-placeholder-por="E-mail *" 
+              placeholder="Email address *" required>
+            <input type="tel" id="contactPhone" 
+              data-placeholder-tetum="Telefone (opsional)" 
+              data-placeholder-eng="Phone (optional)" 
+              data-placeholder-por="Telefone (opcional)" 
+              placeholder="Phone (optional)">
+            <textarea id="contactMsg" rows="4" 
+              data-placeholder-tetum="Hatudu ita-nia projetu ka presiza IT..." 
+              data-placeholder-eng="Tell us about your project or IT needs..." 
+              data-placeholder-por="Conte-nos sobre o seu projeto ou necessidades de TI..." 
+              placeholder="Tell us about your project or IT needs..." required></textarea>
+            <button type="submit" class="btn" id="formSubmitBtn" data-translate="btn_send"><i class="fas fa-paper-plane"></i> Send Message</button>
+            <div id="formFeedback" class="form-message"></div>
+          </form>
+        </div>
+        <div class="contact-details">
+          <h3><i class="fas fa-address-card"></i> <span data-translate="direct_contact">Direct Contact</span></h3>
+          <p style="margin: 1rem 0;"><i class="fas fa-envelope"></i> <strong data-translate="email_label">Email:</strong> <a href="mailto:topledirsky@gmail.com" style="color:#f97316;">topledirsky@gmail.com</a></p>
+          <p><i class="fab fa-whatsapp"></i> <strong data-translate="phone_label">WhatsApp / Phone:</strong> +670 7829 4659</p>
+          <p><i class="fas fa-map-pin"></i> <strong data-translate="office_label">Office:</strong> Becora, Dili, Timor - Leste</p>
+          <hr style="margin: 1.5rem 0; border-color: #e2e8f0;">
+          <p><i class="fas fa-clock"></i> <span data-translate="support_hours">Support hours: Mon-Fri 8am–6pm, Emergency: 24/7</span></p>
+          <p><i class="fas fa-language"></i> <strong data-translate="trilingual_label">Trilingual service:</strong> <span data-translate="trilingual_text">Tetum, English, Português always available.</span></p>
+        </div>
+      </div>
+      
+      <div class="map-wrapper">
+        <iframe 
+          src="https://www.google.com/maps?q=-8.5634722,125.5256667&z=18&output=embed"
+          width="100%" 
+          height="300" 
+          style="border:0; border-radius: 28px;" 
+          loading="lazy"
+          allowfullscreen
+          aria-label="Map showing location of TOPLEDIRSKY in Dili, Timor-Leste">
+        </iframe>
+      </div>
+      
+      <div class="directions-link">
+        <a href="https://www.google.com/maps/place/8%C2%B033'53.6%22S+125%C2%B037'15.5%22E/@-8.5648889,125.6183973,694m/data=!3m1!1e3!4m4!3m3!8m2!3d-8.5648889!4d125.6209722!5m1!1e2?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-directions"></i> <span data-translate="directions_text">📍 Get Directions to Topledirsky (Becora, Dili, Timor-Leste)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a href="https://wa.me/67078294659" class="whatsapp" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<footer>
+  <p>&copy; <span id="year"></span> TOPLEDIRSKY. <span data-translate="footer_rights">All rights reserved.</span> | <span data-translate="footer_support">Suporta iha Tetum, English, Português</span></p>
+</footer>
+
+<!-- External JS -->
+<script src="script.js"></script>
+</body>
+</html>
